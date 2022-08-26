@@ -96,7 +96,7 @@ jobs:
         run: echo "REPOSITORY_TYPE=testing" >> $GITHUB_ENV
 
       - name: Download Artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: ${{ env.PLUGIN_PROJECT_NAME }}
           path: dist/${{ env.REPOSITORY_TYPE }}/${{ env.PLUGIN_PROJECT_NAME }}
